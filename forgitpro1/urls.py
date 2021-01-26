@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from forgitapp1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('reg/',views.regview),
+    path('log/',views.logview)
 ]

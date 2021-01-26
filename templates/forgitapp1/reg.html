@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LogForm</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                {% csrf_token %}
+                {{ lform }}
+                <center>
+                    <input type="submit" value="login" class="btn btn-success">
+                    <input type="reset" value="clear" class="btn btn-danger">
+                </center>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
